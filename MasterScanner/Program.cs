@@ -36,6 +36,14 @@ namespace MasterScannerApp
 
             Task.WaitAll(listener1, listener2);
 
+            Console.WriteLine("\n=== Final Word Index ===");
+            foreach (var fileEntry in index)
+            {
+                foreach (var wordEntry in fileEntry.Value)
+                {
+                    Console.WriteLine($"{fileEntry.Key}:  Word \"{wordEntry.Key}\"  : Count : {wordEntry.Value}");
+                }
+            }
         }
 
         static void ListenToPipe(string pipeName)
