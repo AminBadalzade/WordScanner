@@ -30,7 +30,6 @@ namespace ScannerAApp
 
             Dictionary<string, Dictionary<string, int>> wordIndex = ScanTextFiles(directoryPath);
             SendWordCountsToPipe(wordIndex, pipeName);
-
         }
 
         static Dictionary<string, Dictionary<string, int>> ScanTextFiles(string directoryPath)
