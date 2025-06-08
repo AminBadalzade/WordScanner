@@ -27,6 +27,13 @@ namespace MasterScannerApp
 
             string pipeName1 = args[0];
             string pipeName2 = args[1];
+
+            Console.WriteLine($"Listening on pipes: {pipeName1}, {pipeName2}\n");
+
+            Task listener1 = Task.Run(() => ListenToPipe(pipeName1));
+            Task listener2 = Task.Run(() => ListenToPipe(pipeName2));
+
+            Task.WaitAll(listener1, listener2);
         }
     }
 }
