@@ -28,6 +28,9 @@ namespace ScannerAApp
             string directoryPath = args[0];
             string pipeName = args[1];
 
+            Dictionary<string, Dictionary<string, int>> wordIndex = ScanTextFiles(directoryPath);
+            SendWordCountsToPipe(wordIndex, pipeName);
+
         }
 
         static Dictionary<string, Dictionary<string, int>> ScanTextFiles(string directoryPath)
@@ -63,5 +66,20 @@ namespace ScannerAApp
             return fileWordMap;
         }
 
+        static void SendWordCountsToPipe(Dictionary<string, Dictionary<string, int>> data, string pipeName)
+        {
+            using NamedPipeClientStream pipe = new NamedPipeClientStream(".", pipeName, PipeDirection.Out);
+            pipe.Connect();
+
+            using StreamWriter writer = new StreamWriter(pipe) { AutoFlush = true };
+
+            foreach (KeyValuePair<string, Dictionary<string, int>> fileEntry in data)
+            {
+                foreach (KeyValuePair<string, int> wordEntry in fileEntry.Value)
+                {
+                    writer.WriteLine($"{fileEntry.Key};{wordEntry.Key};{wordEntry.Value}");
+                }
+            }
+        }
     }
 }
