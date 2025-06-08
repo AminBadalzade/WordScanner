@@ -18,7 +18,7 @@ namespace ScannerBApp
 
             try
             {
-                // Pin this process to CPU Core 1
+                
                 Process.GetCurrentProcess().ProcessorAffinity = (IntPtr)0x2;
             }
             catch (Exception ex)
