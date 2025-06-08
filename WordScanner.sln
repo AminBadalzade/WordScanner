@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.13.35825.156 d17.13
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WordScanner", "WordScanner\WordScanner.csproj", "{9C6CD254-636D-4F2A-B0FA-6CEA87AF69A7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ScannerA", "ScannerA\ScannerA.csproj", "{FE65A734-0851-4CF0-9EF7-DAB1230134FC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9C6CD254-636D-4F2A-B0FA-6CEA87AF69A7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9C6CD254-636D-4F2A-B0FA-6CEA87AF69A7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9C6CD254-636D-4F2A-B0FA-6CEA87AF69A7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9C6CD254-636D-4F2A-B0FA-6CEA87AF69A7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FE65A734-0851-4CF0-9EF7-DAB1230134FC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FE65A734-0851-4CF0-9EF7-DAB1230134FC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FE65A734-0851-4CF0-9EF7-DAB1230134FC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FE65A734-0851-4CF0-9EF7-DAB1230134FC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F41E930C-9360-4336-BAA1-E6E3C7CAE1DC}
+	EndGlobalSection
+EndGlobal
