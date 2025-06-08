@@ -7,6 +7,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WordScanner", "WordScanner\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ScannerA", "ScannerA\ScannerA.csproj", "{FE65A734-0851-4CF0-9EF7-DAB1230134FC}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ScannerB", "ScannerB\ScannerB.csproj", "{39303D7E-ACF0-4513-977F-98EC5D9539D2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MasterScanner", "MasterScanner\MasterScanner.csproj", "{04E3CC51-325B-446E-846D-94E744303C60}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +25,14 @@ Global
 		{FE65A734-0851-4CF0-9EF7-DAB1230134FC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FE65A734-0851-4CF0-9EF7-DAB1230134FC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FE65A734-0851-4CF0-9EF7-DAB1230134FC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{39303D7E-ACF0-4513-977F-98EC5D9539D2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{39303D7E-ACF0-4513-977F-98EC5D9539D2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{39303D7E-ACF0-4513-977F-98EC5D9539D2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{39303D7E-ACF0-4513-977F-98EC5D9539D2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{04E3CC51-325B-446E-846D-94E744303C60}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{04E3CC51-325B-446E-846D-94E744303C60}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{04E3CC51-325B-446E-846D-94E744303C60}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{04E3CC51-325B-446E-846D-94E744303C60}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
